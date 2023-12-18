@@ -1,0 +1,8 @@
+.main {
+  display: flex;
+  background-image: url('../images/Web\ capture_11-12-2023_183818_huge-shoes.myshopify.com.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}

@@ -1,0 +1,7 @@
+{
+    "articles":[{"id":1,"fruit":"Fraise","price":15,"quantite":5},
+    {"id":2,"fruit":"Ananas","price":20,"quantite":15},
+    {"id":3,"fruit":"Banane","price":25,"quantite":8},
+    {"id":4,"fruit":"Watermelon","price":10,"quantite":8}],
+    "users":[{"id":1,"nom":"Younes"}]
+}
