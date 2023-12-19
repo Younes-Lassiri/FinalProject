@@ -6,6 +6,8 @@ import { Link } from 'react-router-dom';
 export default function Collection() {
   const data = useSelector((state) => state.products)
   const dispatch = useDispatch()
+
+
   
   return (
     <div class="container-fluid text-center con">
