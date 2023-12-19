@@ -8,3 +8,14 @@
 }
 
 
+
+
+@media screen and (max-width: 767px) {
+  .issue{
+    padding-top:"500px";
+    background:'#f8f5f0';
+    z-index:-80
+  }
+}
+
+

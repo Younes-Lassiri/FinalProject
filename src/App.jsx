@@ -5,8 +5,12 @@ import Landing from './components/LandingPage/Landing';
 import Menu from './components/Menu/Menu';
 import SecondSec from './components/SecondSec/SecondSec';
 import ThirdSec from './components/ThirdSec/ThirdSec';
+import Collection from './components/FirstSec/collection/Collection';
+
+
 
 const App = () => {
+  
   return (
     <Router>
       <Routes>
@@ -19,8 +23,10 @@ const App = () => {
                 <Menu />
                 <FirstSec />
                 <SecondSec />
-                <ThirdSec />
               </div>
+              <div className='issue'><ThirdSec />
+                </div>
+              <div><Collection/></div>
             </div>
           }
         />
