@@ -112,6 +112,36 @@ body{
     user-select: none;
   }
 
-
+  .toTop{
+    width: 40px;
+    height: 40px;
+    background-color: #967844;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    color: white;
+    z-index: 1000;
+    cursor: pointer;
+    font-size: 2.2rem;
+    font-weight: lighter;
+    display: none;
+    transition: 2s;
+    
+  }
+  .toTop.show {
+    display: block;
+  }
+.toTop .span{
+    transition: .9s;
+    text-decoration: none;
+    color: whitesmoke;
+    position: absolute;
+    left: 60%;
+    top: 75%;
+    transform: translate(-50%,-50%) rotate(135deg);
+}
+  .toTop:hover .span{
+    margin-top: -7px;
+  }
 
 

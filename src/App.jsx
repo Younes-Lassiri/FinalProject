@@ -14,17 +14,19 @@ const App = () => {
           path="/"
           element={
             <div>
-              <Landing />
+              <Landing/>
               <div>
                 <Menu />
                 <FirstSec />
                 <SecondSec />
+                <ThirdSec />
               </div>
             </div>
           }
         />
         <Route path="/haha/*" element={<h1>Not Found</h1>} />
       </Routes>
+      <div className='toTop'></div>
     </Router>
   );
 };

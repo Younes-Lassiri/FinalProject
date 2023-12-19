@@ -16,37 +16,53 @@
 }
 
 
-.third-sec::before {
-    content: '';
-    border: 40px solid rgba(255, 255, 255, 0.623);
-    border-top: 30px solid transparent;
-    border-bottom: 30px solid transparent;
-    border-right: 30px solid transparent;
-    position: absolute;
-    left: 51.5%;
-    top: 45%;
-    transform: translate(-50%);
-    z-index: 100;
-    
-}
-
-
-
-.third-sec::after {
-    content: '';
-    width: 150px;
-    height: 150px;
-    background-color: transparent;
-    border-radius: 50%;
-    border: 1px solid white;
+.third-sec .play img{
+    width: 190px;
+    height: 190px;
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
-}
-.third-sec::before:hover {
-    background-color: red;
+    transform: translate(-50%, -50%);
+    z-index: 700;
 }
 
+
+.third-sec .old {
+    width: 150px;
+    height: 150px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 700;
+    margin-left: -10px;
+    transition: .4s;
+}
+
+.third-sec .new{
+    width: 170px;
+    height: 170px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 700;
+    margin-left: -10px;
+    transition: .4s;
+}
+
+.third-sec:hover .new{
+    width: 150px;
+    height: 150px;
+}
+
+.third-sec:hover .old{
+    width: 170px;
+    height: 170px;
+}
 
 

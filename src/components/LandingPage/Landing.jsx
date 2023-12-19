@@ -1,10 +1,28 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 import './Landing.css';
 
 export default function Landing() {
+  const [showToTop, setShowToTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.pageYOffset > 700) {
+        setShowToTop(true);
+      } else {
+        setShowToTop(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <div className='landing-page'>
+    <div className='landing-page' id='top'>
       <div><h1 className='logo'>Y&M Royal Chic</h1></div>
       <div className='description'>
         <h1 style={{ fontWeight: 300 }}>
@@ -19,6 +37,13 @@ export default function Landing() {
         </ScrollLink>
       </div>
       <div className='scroll-line'></div>
+      {showToTop && (
+        <div className={`toTop ${showToTop ? 'show' : ''}`}>
+        <ScrollLink className='span' to="top" smooth={true} duration={500}>
+          ∟
+        </ScrollLink>
+      </div>
+      )}
     </div>
   );
 }

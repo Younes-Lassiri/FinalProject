@@ -106,7 +106,9 @@ export default function Menu() {
 
     <div className='hidden-menu'>
       <ul className='navbar-nav'>
-        <li><a href="#" className='activee'>HOME</a></li>
+        <li><Link className="activee" to="/haha">
+                  HOME
+                </Link></li>
         <li><a href="#">PAGES</a></li>
         <li><a href="v">SHOP</a></li>
         <li><a href="v">ELEMENTS</a></li>
